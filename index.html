@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ポートフォリオ</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" >
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <!-- slick編集用のCSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <!-- header -->
+
+      <header class="header">
+        <div class="container">
+          <h1 class="header-logo">
+            <i class="fa-solid fa-user"></i>
+            <a href="page-top">kado17</a>
+          </h1>
+          <nav class="gnav">
+            <ul class="gnav-list">
+              <li class="gnav-item"><a href="#about">ABOUT</a></li>
+              <li class="gnav-item"><a href="#works">WORKS</a></li>
+              <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- /header -->
+
+      <!-- title -->
+      <div class="title">
+        <span class="box">
+          <h3>こんにちは! kado17です。</h3>
+          <p>
+            新たな価値を創出する力を身に着け、<br />社会に貢献できるエンジニアを目指しています。
+          </p>
+        </span>
+      </div>
+      <!-- /title -->
+      <main class="content">
+        <!-- pr -->
+        <div class="pr" id="about">
+          <h2>私の3つの強み</h2>
+          <div class="pr-list">
+            <div class="pr-item">
+              <div class="pr-img"><p class="pr-icon paper-plane"></p></div>
+              <h3>行動力</h3>
+              <p class="pr-text">
+                興味のあることに積極的に挑戦します。<br />個人開発や資格試験に挑戦しました。
+              </p>
+            </div>
+            <div class="pr-item">
+              <div class="pr-img"><p class="pr-icon calendar"></p></div>
+              <h3>計画力</h3>
+              <p class="pr-text">
+                目標達成のために、細かく計画を立てます。<br />状況に応じて柔軟に計画を変更して、対応できます。
+              </p>
+            </div>
+            <div class="pr-item">
+              <div class="pr-img"><p class="pr-icon check"></p></div>
+              <h3>実行力</h3>
+              <p class="pr-text">
+                立てた計画をもとに、こつこつ取り組みます。<br />最終的に目標を実現して、次に繋げます。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /pr -->
+        <!-- works -->
+        <section class="works-section" id="works">
+          <h1>WORKS</h1>
+          <h2>チーム開発</h2>
+          <div class="works-list">
+            <div class="works-item" id="Word-Chain">
+              <div class="works-img">
+                <a href="img/Word-Chain.png" data-lightbox="Word-Chain">
+                  <img src="img/Word-Chain.png" alt="" />
+                </a>
+              </div>
+              <div class="works-text">
+                <div class="works-title">
+                  <h3>
+                    Word-Chain
+                    <span class="works-title-note"
+                      >オンライン上で対戦できるしりとりゲームWebアプリ</span
+                    >
+                  </h3>
+                  <p>
+                    <span>使用言語：HTML / CSS / JavaScript / Python</span
+                    ><span> 開発期間：1.5カ月</span>
+                    <span>チーム人数：4人</span>
+                  </p>
+                </div>
+                <div class="works-sentence">
+                  <h4>概要</h4>
+                  <p>
+                    大学の実習で、オンライン上で対戦できるしりとりゲームWebアプリのチーム開発を行いました。フレームワークにはDjangoを使用しました。また、Ajaxを用いてリアルタイムな複数人での対戦を実現しました。完成後はHerokuにデプロイを行いました。
+                  </p>
+                  <h4>担当：バックエンド</h4>
+                  <p>
+                    主に、データベースやフロントエンドとのやり取りや、送信された単語のチェック処理を実装しました。
+                    事前にAPI設計やデータベース設計をチーム内で共有したことで、スムーズに開発を進められました。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="works-item">
+              <div class="works-img">
+                <img src="img/WIP.png" alt="" />
+              </div>
+              <div class="works-text">
+                <div class="works-title">
+                  <h3>
+                    SummaryGPT(開発中)<span class="works-title-note"
+                      >会議音声をもとに会議を要約するWebアプリ</span
+                    >
+                  </h3>
+                  <p>
+                    <span>使用言語：HTML / CSS / JavaScript / Python</span
+                    ><span> 開発期間：6カ月(予定)</span>
+                    <span>チーム人数：5人</span>
+                  </p>
+                </div>
+                <div class="works-sentence">
+                  <h4>概要</h4>
+                  <p>
+                    大学の実習でChatGPTのAPIを活用したWebアプリのチーム開発を行っています。
+                    私のチームでは、会議音声データを入力すると、文書化やChatGPTを用いた要約、WordCloudのような図の生成を行い、一目で会議の内容が分かるように要約するWebアプリを開発しています。
+                    現在は、プロジェクト計画が完成したので、これからコーディングを行います。
+                  </p>
+                  <h4>プロジェクト計画について</h4>
+                  <p>
+                    プロジェクト計画では、プロジェクトの関連する取り組みや開発に必要な技術について調査したサーベイをもとに、インセプションデッキを作成しました。
+                    インセプションデッキでは、開発に用いる技術や開発の進捗目標などを定めました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>個人開発</h2>
+          <div class="works-list">
+            <div class="works-item">
+              <div class="works-img slick">
+                <a
+                  href="img/Minesweeper/Minesweeper(1).png"
+                  data-lightbox="Minesweeper"
+                >
+                  <img src="img/Minesweeper/Minesweeper(1).png" alt="" />
+                </a>
+                <a
+                  href="img/Minesweeper/Minesweeper(2).png"
+                  data-lightbox="Minesweeper"
+                >
+                  <img src="img/Minesweeper/Minesweeper(2).png" alt="" />
+                </a>
+                <a
+                  href="img/Minesweeper/Minesweeper(3).png"
+                  data-lightbox="Minesweeper"
+                >
+                  <img src="img/Minesweeper/Minesweeper(3).png" alt="" />
+                </a>
+                <a
+                  href="img/Minesweeper/Minesweeper(4).png"
+                  data-lightbox="Minesweeper"
+                >
+                  <img src="img/Minesweeper/Minesweeper(4).png" alt="" />
+                </a>
+              </div>
+              <div class="works-text">
+                <div class="works-title">
+                  <h3>マインスイーパー</h3>
+                  <p>
+                    <span>使用言語等：TypeScript / React / Node.js</span
+                    ><span> 開発期間：1.5カ月</span>
+                  </p>
+                </div>
+                <div class="works-sentence">
+                  <h4>概要</h4>
+                  <p>
+                    個人開発を通してフレームワークの使い方やアルゴリズムの構築技能を向上させるためにWebゲームアプリ開発に挑戦しました。
+                    環境構築やCI/CDの設定は有識者の方にご協力頂きました。Reactは初めて触れるライブラリだったので、一から調べて自分の思うように動かすことに苦戦しました。
+                    初めての個人開発だったこともあり、多くの学びを得られました。
+                  </p>
+                  <h4>工夫した点</h4>
+                  <p>
+                    3つの難易度の実装やレスポンシブ対応を行った点です。また、
+                    React Hooksを有効活用できるように意識しました。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="works-item">
+              <div class="works-img slick">
+                <a href="img/Tetris/Tetris(1).png" data-lightbox="Tetris">
+                  <img src="img/Tetris/Tetris(1).png" alt="" />
+                </a>
+                <a href="img/Tetris/Tetris(2).png" data-lightbox="Tetris">
+                  <img src="img/Tetris/Tetris(2).png" alt="" />
+                </a>
+                <a href="img/Tetris/Tetris(3).png" data-lightbox="Tetris">
+                  <img src="img/Tetris/Tetris(3).png" alt="" />
+                </a>
+              </div>
+              <div class="works-text">
+                <div class="works-title">
+                  <h3>テトリス</h3>
+                  <p>
+                    <span>使用言語等：TypeScript / React / Node.js</span
+                    ><span> 開発期間：1.5カ月</span>
+                  </p>
+                </div>
+                <div class="works-sentence">
+                  <h4>概要</h4>
+                  <p>
+                    マインスイーパーよりも難易度の高い題材に挑戦したいと考え、開発を行いました。
+                    テトリミノが落ちる処理にタイマーを用いるため、ユーザーの操作との衝突で想定外の動作が起こらないように注意しました。
+                  </p>
+                  <h4>工夫した点</h4>
+                  <p>
+                    テトリミノの回転処理です。テトリミノが壁際にある場合でも自然な回転ができるように処理を工夫しました。
+                    テトリミノの想定外の動作を防ぐために盤面やテトリミノの管理方法を試行錯誤しました。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="works-item">
+              <div class="works-img slick">
+                <a href="img/Reversi/Riversi(1).png" data-lightbox="Riversi">
+                  <img src="img/Reversi/Riversi(1).png" alt="" />
+                </a>
+                <a href="img/Reversi/Riversi(2).png" data-lightbox="Riversi">
+                  <img src="img/Reversi/Riversi(2).png" alt="" />
+                </a>
+                <a href="img/Reversi/Riversi(3).png" data-lightbox="Riversi">
+                  <img src="img/Reversi/Riversi(3).png" alt="" />
+                </a>
+              </div>
+              <div class="works-text">
+                <div class="works-title">
+                  <h3>
+                    リバーシ<span class="works-title-note"
+                      >インターネット対戦可能</span
+                    >
+                  </h3>
+                  <p>
+                    <span>使用言語等：TypeScript / React / Node.js</span
+                    ><span> 開発期間：1カ月</span>
+                  </p>
+                </div>
+                <div class="works-sentence">
+                  <h4>概要</h4>
+                  <p>
+                    SocketIOというWebSocketのライブラリを用いてインターネット対戦が出来るWebゲームアプリ開発に挑戦しました。
+                    クライアントサイドはTypeScriptとReact、サーバーサイドはTypeScriptをそれぞれ用いて開発を行いました。
+                    また、サーバーサイドは自分でESLintやPrettierの導入などの環境構築を行い、Herokuにデプロイしました。
+                  </p>
+                  <h4>工夫した点</h4>
+                  <p>
+                    TypeScriptの独自の型定義ファイルを作成することで、タイプミスの早期発見やtabキーでの予測入力ができるようにしました。
+                    これによって、送受信するデータの型や値をしっかりと管理できました。
+                    クライアント側とサーバー側でのデータのやり取りや処理の分担など、考えることが多かったため、良い経験になりました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /works -->
+        <!-- skill -->
+        <section id="skill">
+          <h1>SKILL</h1>
+          <div class="container">
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-img"><p class="skill-icon python"></p></div>
+                <div class="skill-body">
+                  <h3 class="skill-name">Python</h3>
+                  <p class="skill-text">
+                    大学で最も触れている言語です。実習のチーム開発ではDjangoを用いてバックエンドやユーザ認証機能の実装を行いました。
+                    また、matplotlibを用いた簡単なグラフ描画も学びました。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-img">
+                  <p class="skill-icon javascript"></p>
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-name">JavaScript / TypeScript</h3>
+                  <p class="skill-text">
+                    大学ではJavaScriptについて学び、キャンパス内APIとのマッシュアップを行いました。
+                    個人開発ではTypeScriptやReactに触れ、Webゲームアプリ開発を行いました。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-img"><p class="skill-icon c"></p></div>
+                <div class="skill-body">
+                  <h3 class="skill-name">C</h3>
+                  <p class="skill-text">
+                    大学で、基本的なC言語の仕様やプロセス間通信やスレッドについて学びました。
+                    また、T-Carを用いて組込みシステムの制御を学び、実際にT-Carの走行試験を行いました。
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-img"><p class="skill-icon html"></p></div>
+                <div class="skill-body">
+                  <h3 class="skill-name">HTML / CSS</h3>
+                  <p class="skill-text">
+                    大学の実習のWebサイトやWebアプリのチーム開発で主に用いました。
+                    また、個人開発でも、Reactのコンポーネント定義のために用いました。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-img"><p class="skill-icon sql"></p></div>
+                <div class="skill-body">
+                  <h3 class="skill-name">SQL</h3>
+                  <p class="skill-text">
+                    Djangoを用いたチーム開発でSQLiteを組み込んで使用しました。
+                    チーム開発ではユーザアカウントとパスワードの管理や、送信されたしりとりの単語やに送信日時、送信ユーザなどのデータを管理しました。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-img"><p class="skill-icon ap"></p></div>
+                <div class="skill-body">
+                  <h3 class="skill-name">応用情報技術者試験 (2023年6月取得)</h3>
+                  <p class="skill-text">
+                    大学での学びをより発展させ、IT分野の幅広い知識や技術の定着を目的として挑戦しました。
+                    過去の基本情報技術者試験への挑戦で得た教訓から、特に午後問題を重点的に対策するように学習の計画を立てました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /skill -->
+        <!-- topagetop -->
+        <a href="#" id="js-page-top"></a>
+        <!-- topagetop -->
+        <!-- footer -->
+        <footer class="footer">
+          <div class="copyright">&copy;2023 kado17</div>
+        </footer>
+        <!-- /footer -->
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: "BIZ UDPGothic", "メイリオ", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+.wrapper {
+  padding-top: 10vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4vw;
+}
+
+.content {
+  background-color: #fff;
+  margin-top: 2vh;
+  margin: 0 10%;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin: 8vh 0;
+}
+
+.content h2 {
+  font-size: 3.5rem;
+  margin: 5vh 0 5vh 4vw;
+}
+
+.content h2::before {
+  content: "・ ";
+}
+
+/*ヘッダー*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 10%;
+  background-color: #2e74c7;
+  box-shadow: 0 0.5rem 1.2rem -0.6rem rgba(0, 0, 0, 0.5);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+}
+
+.header-logo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 2vw;
+}
+
+.header-logo a {
+  color: #fff;
+}
+
+.header-logo i {
+  color: #fff;
+}
+
+.gnav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.gnav-item {
+  margin-right: 2vw;
+}
+
+.gnav-item a {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.5vh 0;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.gnav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0.3vh;
+  content: "";
+  transition: 0.3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+.gnav-item a:hover:after {
+  width: 100%;
+  font-weight: bold;
+}
+
+/*タイトル*/
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7vh 0;
+
+  background-image: url(../img/title.png);
+  background-repeat: repeat;
+}
+
+.title img {
+  max-width: 30%;
+  margin-right: 5vw;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 5rem;
+}
+
+.title p {
+  margin-top: 4vh;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.box {
+  position: relative;
+  width: 70vw;
+  height: 20vh;
+  padding: 4vh 4vw;
+  text-align: left;
+  color: #fff;
+}
+
+/*PRポイント*/
+
+.pr {
+  margin: 4vh 0 10vh 0;
+  padding-top: 4vh;
+}
+
+.pr h3 {
+  font-size: 3rem;
+}
+
+.pr-list {
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pr-item {
+  margin: 0 3vw;
+  text-align: center;
+}
+
+.pr-text {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.pr-img {
+  display: flex;
+  justify-content: center;
+}
+
+.pr-icon {
+  font-family: "Font Awesome 6 Free";
+  font-weight: normal;
+  font-size: 9rem;
+  text-align: center;
+  margin: 0;
+}
+
+.paper-plane::before {
+  content: "\f1d8";
+  font-weight: 900;
+}
+
+.calendar::before {
+  content: "\f073";
+}
+
+.check::before {
+  content: "\f00c";
+  font-weight: 900;
+}
+
+/*WORKS*/
+.works-item {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 5vw;
+  margin: 0 2vw;
+}
+
+.works-img {
+  background-color: #fff;
+  background-image: url(../img/works-background.png);
+  margin-right: 5vw;
+  height: 15vw;
+  width: 15vw;
+  vertical-align: middle;
+}
+
+.works-img img {
+  object-fit: contain;
+  height: 15vw;
+  width: 15vw;
+}
+
+.works-text {
+  margin-left: 2vw;
+}
+
+.works-title {
+  margin-bottom: 2vh;
+}
+
+.works-title h3 {
+  font-size: 4rem;
+  border-bottom: #2e74c7 solid 0.4vh;
+  margin-top: 0;
+  margin-bottom: 1vh;
+  padding-bottom: 0.6vh;
+}
+
+.works-title-note {
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-left: 1vw;
+}
+
+.works-title p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.works-sentence h4 {
+  font-size: 1.8rem;
+  margin: 1vh 0.5vw 1vh 0;
+}
+
+.works-sentence h4::before {
+  content: "・ ";
+}
+
+.works-sentence p {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  margin: 0.5vh 0 0.8vh 0.5vw;
+  text-indent: 1em;
+}
+
+/*SKILL*/
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.skill-img {
+  margin-right: 2.5vh;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-name {
+  font-size: 2rem;
+  margin-bottom: 0.1vw;
+}
+
+.skill-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-indent: 1em;
+}
+
+.skill-icon {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: normal;
+  font-size: 4rem;
+  text-align: center;
+  width: 4vh;
+}
+
+.python::before {
+  content: "\f3e2";
+}
+
+.javascript::before {
+  content: "\f3b9";
+}
+
+.html::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f1c9";
+}
+
+.sql::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f1c0";
+}
+
+.c::before {
+  content: "\43";
+}
+
+.ap::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f304";
+}
+
+/*フッター*/
+
+.footer {
+  margin-top: 8vh;
+  padding: 2vh;
+  background-color: #2e74c7;
+}
+
+.copyright {
+  font-size: 0.5vh;
+  text-align: center;
+  color: #fff;
+}
+
+/* TOTOPボタン */
+#js-page-top {
+  width: 5vw;
+  height: 5vw;
+  position: fixed;
+  right: 5vh;
+  bottom: 5vh;
+  background: #2e74c7;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+#js-page-top::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f106";
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  height: 5vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+/*slickをカスタム*/
+
+.slick-prev::before,
+.slick-next::before {
+  color: #000;
+  opacity: 1;
+  font-family: "slick";
+}
+
+.slick-next {
+  right: -3vw;
+}
+.slick-prev {
+  left: -3vw;
+}

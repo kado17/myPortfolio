@@ -1,0 +1,9 @@
+ポートフォリオ作成で使用した外部素材等のリンク
+
+
+- BIZ UDPGothic : https://fonts.google.com/specimen/BIZ+UDPGothic
+- Font Awesome : https://fontawesome.com/download
+- JQuery : https://jquery.com/
+- slick : https://kenwheeler.github.io/slick/
+- lightbox2 : https://github.com/lokesh/lightbox2/releases
+- GeoPattern : http://btmills.github.io/geopattern/geopattern.html
