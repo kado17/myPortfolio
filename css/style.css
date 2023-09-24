@@ -122,6 +122,15 @@ span {
   font-weight: bold;
 }
 
+.github::before {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: normal;
+  text-align: center;
+  font-weight: 900;
+  content: "\f09b";
+  font-size: 2rem;
+}
+
 /*タイトル*/
 .title {
   display: flex;
@@ -413,3 +422,6 @@ span {
 .slick-prev {
   left: -3vw;
 }
+
+.red {color:red;}
+.blue {color:#2e74c7;}
