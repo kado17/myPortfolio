@@ -365,6 +365,11 @@ span {
   content: "\f304";
 }
 
+.java::before{
+  content: "\f4e4";
+
+}
+
 /*フッター*/
 
 .footer {
